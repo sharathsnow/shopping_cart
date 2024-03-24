@@ -1,0 +1,28 @@
+.container{
+    margin: 30px auto;
+}
+.product-card-main{
+    margin: 10px auto;
+}
+.card-title{
+    width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+}
+.card{
+    height: 100%;
+   
+    
+}
+.review{
+    width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap;
+}
+.rating {
+    width: 190px;
+    text-align: center;
+    position: relative;
+}

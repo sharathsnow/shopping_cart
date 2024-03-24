@@ -1,0 +1,34 @@
+
+<div class="addproducts-form">
+    <form  [formGroup]="addproductsform"  >
+		<h2>Add Products</h2>
+		<p>Please fill in this form to display your products!</p>
+		<hr>
+        <div class="form-group">
+            <input type="url" class="form-control" formControlName="product_image" name="product_image" placeholder="paste image url" required="required">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" formControlName="pName" name="productname" placeholder="Enter product name"required="required">
+        </div>
+        <div class="form-group">
+        	<input type="text" class="form-control" formControlName="pDescription" name="pDescription" placeholder="Enter product short description" required="required">
+        </div>
+		
+		<div class="form-group">
+            <input type="text" class="form-control" formControlName="pDescriptionLong" name="pDescriptionLong" placeholder="Enter product long description" required="required">
+        </div> 
+        
+        <div class="form-group">
+            <input type="text" class="form-control" formControlName="pPrice" name="product_price" placeholder="Enter product price" required="required">
+        </div>     
+        <div class="form-group">
+			<label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+		</div>
+        {{addproductsform.status}}
+		<div class="form-group">
+            <button (click)="addProducts()" type="submit" class="btn btn-primary btn-lg">Add Products</button>
+        </div>
+    </form>
+	
+   
+</div>

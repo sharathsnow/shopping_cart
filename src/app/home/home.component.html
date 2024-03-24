@@ -1,0 +1,41 @@
+<div class="container">
+<div class="row">
+    <div class="col-4 product-card-main" *ngFor="let product of prodctList">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" [src]=product.product_image alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title" title={{product.pName}}>{{product.pName}}</h5>
+              <p class="card-text">{{product.pDescription}}</p>
+             <div> Price : <B>{{product.pPrice}}</B></div>
+              <a  routerLink= '/productdetails/{{product.id}}' class="btn btn-primary">Product Details</a>
+             <div *ngIf="product.rating"> Rating:  <b > {{product.rating}}</b></div>
+             <div class="rating">
+              <!-- <div class="stars">
+                  <span *ngIf="product.rating>=1" class="fas fa-star "></span>
+                  <span *ngIf="product.rating>=2" class="fas fa-star "></span>
+                  <span *ngIf="product.rating>=3" class="fas fa-star "></span>
+                  <span *ngIf="product.rating>=4" class="fas fa-star"></span>
+                  <span *ngIf="product.rating>=5" class="fas fa-star"></span>
+              </div> -->
+              <div class="stars">
+                <span  [ngClass]="product.rating>=1 ? 'fas fa-star':'far fa-star'" ></span>
+                <span  [ngClass]="product.rating>=2? 'fas fa-star':'far fa-star'"></span>
+                <span [ngClass]="product.rating>=3? 'fas fa-star':'far fa-star'"></span>
+                <span  [ngClass]="product.rating>=4? 'fas fa-star':'far fa-star'"></span>
+                <span  [ngClass]="product.rating>=5? 'fas fa-star':'far fa-star'"></span>
+            </div>
+            </div>
+              <div class=review  *ngIf="product.rating"> <b>Review:</b>  {{product.review}}</div>
+              
+              
+            </div>
+          </div>
+    </div>
+    
+    
+    
+</div>
+
+</div>
+
+<!-- <span *ngIf="priduct.rating>=1">*</span><span *ngIf="priduct.rating>=2">**</span><span *ngIf="priduct.rating>=3">***</span> --> 

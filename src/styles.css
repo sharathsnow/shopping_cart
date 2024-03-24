@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+
+  /*Styling the body & background*/
+  body {
+    background-image: url("http://www.bideew.com/photos/thumbnail/7718/master/");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+  }

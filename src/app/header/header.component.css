@@ -1,0 +1,31 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999
+}
+
+.bg-dark {
+    background-color: blue !important
+}
+body { padding-top: 70px; }
+
+
+.cart{
+    width: auto;
+    position:relative;
+    margin-right: 20px;
+}
+.count{
+    top: -12px;
+    font-size: 22px;
+    height: 25px;
+    left: 20px;
+    position: absolute;
+    border-radius: 52%;
+    background-color: yellow;
+    width: 22px;
+    padding: 1px 6px;
+    margin-left: -5px;
+}
+
